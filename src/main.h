@@ -16,11 +16,11 @@
 #include "CRtspSession.h"
 
 // Button stuff
-#include <OneButton.h>
+//#include <OneButton.h>
 
 // Select which of the servers are active
 // Select only one or the streaming will be very slow!
-// #define ENABLE_WEBSERVER
+#define ENABLE_WEBSERVER
 #define ENABLE_RTSPSERVER
 
 // Camera class

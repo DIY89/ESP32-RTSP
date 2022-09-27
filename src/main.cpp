@@ -9,7 +9,7 @@ OV2640 cam;
 /** GPIO for OTA request button */
 int otaButton = 12;
 /** Button class */
-OneButton pushBt(otaButton, true, true);
+//OneButton pushBt(otaButton, true, true);
 
 /** Function declarations */
 void enableOTA(void);
@@ -72,14 +72,14 @@ void setup()
 #endif
 
 	// Attach the button functions
-	pushBt.attachClick(enableOTA);
-	pushBt.attachDoubleClick(resetDevice);
+	//pushBt.attachClick(enableOTA);
+	//pushBt.attachDoubleClick(resetDevice);
 }
 
 void loop()
 {
 	// Check the button
-	pushBt.tick();
+	//pushBt.tick();
 
 	if (otaStarted)
 	{
